@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Jupyter Book: A Collaborative Data Storytelling Tool for the OCEAN:ICE project</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha512-V5fKCVKOFy36w8zJmLzPH5R6zU6KvuHOvxfMRczx2ZeqTjKRGSBO9yiZjCKEJS3n6EmENwrH/xvSwXqxje+VVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css" integrity="sha512-5w6AICFraU3+mkD1dTmad4vXyyJ1nZM/KA2TG8oQ5yiyTYAXssxPk930O1upFxeC7ml4CxyXC1QBzthu26ZxZg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<style>
+  .reveal h1{
+    font-size: 1.8em;
+  }
+  .reveal pre{
+    font-size: 0.4em;
+  }
+  .reveal p{
+    font-size: 0.7em;
+  }
+  .reveal li{
+    font-size: 0.7em;
+  }
+</style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Jupyter Book: A Collaborative Data Storytelling Tool for the OCEAN:ICE project</h1>
+</section>
+
+<section id="what-is-jupyter-book" class="slide level1">
+<h1>What is Jupyter Book?</h1>
+<ul>
+<li class="fragment">Jupyter Book is a documentation tool designed for collaborative content creation</li>
+<li class="fragment">It facilitates the division of work among team members</li>
+<li class="fragment">Provides a structured framework for sharing knowledge</li>
+<li class="fragment">Jupyter Book can generate an interactive website for your project</li>
+<li class="fragment">All .ipynb files are downloadable and can be executed directly through Google Colab</li>
+</ul>
+</section>
+<section id="why-jupyter-book-for-oceanice" class="slide level1">
+<h1><strong>Why Jupyter Book for OCEAN:ICE?</strong></h1>
+</section>
+<section id="structure-and-organization" class="slide level1">
+<h1><strong>Structure and Organization</strong></h1>
+<p>OceanICE is a complex project with multiple work packages. Jupyter Book offers a structured framework for organizing our content, making it easier to manage the documentation across different work packages.</p>
+</section>
+<section id="collaborative-authoring" class="slide level1">
+<h1><strong>Collaborative Authoring</strong></h1>
+<p>Our project involves multiple contributors and collaborators working together. Jupyter Book supports collaborative content creation, allowing team members to efficiently contribute and edit documentation.</p>
+</section>
+<section id="integration-of-different-content-types" class="slide level1">
+<h1><strong>Integration of Different Content Types</strong></h1>
+<p>OceanICE encompasses various types of content, including data, research findings, and more. Jupyter Book seamlessly integrates a range of content formats, such as Jupyter Notebooks, Markdown, and more, enabling us to present diverse information cohesively.</p>
+</section>
+<section id="accessibility-and-sharing" class="slide level1">
+<h1><strong>Accessibility and Sharing</strong></h1>
+<p>We want to make our research and findings accessible to a wider audience. Jupyter Book allows us to publish interactive and accessible documentation that can be easily shared with the broader scientific community.</p>
+</section>
+<section id="customization-and-flexibility" class="slide level1">
+<h1><strong>Customization and Flexibility</strong></h1>
+<p>OceanICE has unique documentation requirements. Jupyter Book’s customization options provide the flexibility needed to tailor our documentation to the specific needs of our project.</p>
+</section>
+<section id="how-to-create-oceanice-book" class="slide level1">
+<h1><strong>How to create OCEAN:ICE Book?</strong></h1>
+</section>
+<section id="every-chapter-is-a-file." class="slide level1">
+<h1><strong>Every chapter is a file.</strong></h1>
+<p>Jupyter Book is versatile in terms of input content It can incorporate different types of content:</p>
+<ul>
+  <li class="fragment">Jupyter Notebooks: Ideal for incorporating code, visualizations, and narrative text</li>
+  <li class="fragment">Markdown: Provides flexibility for creating and structuring content</li>
+</ul>
+</section>
+<section id="the-folders-structure-of-the-book" class="slide level1">
+<h1><strong>The folders structure of the book</strong></h1>
+<pre><code>literacy.oceanice/
+├── _config.yml
+├── _toc.yml
+├── intro.md
+├── book-images/
+|    └── logo.png
+├── pages/
+|   ├── chapter1/
+|   | ├──chapter1.md
+|   | └── chapter1-images/
+|   |   └── image1.png
+|   └── chapter2/
+|       ├── chapter2.ipynb
+|       └── chapter2-images/
+├── references.bib
+└── requirements.txt</code></pre>
+</section>
+<section id="root-directory-and-configuration-files" class="slide level1">
+<h1><strong>Root Directory and Configuration Files</strong></h1>
+<ul>
+<li class="fragment">The root directory contains project-wide configuration files.</li>
+<li class="fragment"><code>_config.yml</code> stores book-level settings.</li>
+<li class="fragment"><code>_toc.yml</code> defines the table of contents structure.</li>
+</ul>
+</section>
+<section id="introduction-and-book-images" class="slide level1">
+<h1><strong>Introduction and Book Images</strong></h1>
+<ul>
+<li class="fragment"><code>intro.md</code> contains introductory content.</li>
+<li class="fragment"><code>book-images/</code> directory stores book-wide images like the logo.</li>
+</ul>
+</section>
+<section id="pages-and-subfolders-chapters" class="slide level1">
+<h1><strong>Pages and Subfolders (Chapters)</strong></h1>
+<ul>
+<li class="fragment"><code>pages/</code> directory is for book content.</li>
+<li class="fragment">Subfolders represent chapters (e.g., <code>chapter1/</code> and <code>chapter2/</code>).</li>
+</ul>
+</section>
+<section id="chapter-content-and-images" class="slide level1">
+<h1><strong>Chapter Content and Images</strong></h1>
+<ul>
+<li class="fragment">Each chapter subfolder contains content and resources.</li>
+<li class="fragment">For example, <code>chapter1/</code> has <code>chapter1.md</code> for content.</li>
+<li class="fragment"><code>chapter1-images/</code> contains chapter-specific images.</li>
+</ul>
+</section>
+<section id="references-and-requirements" class="slide level1">
+<h1><strong>References and Requirements</strong></h1>
+<ul>
+<li class="fragment"><code>references.bib</code> stores bibliographic references.</li>
+<li class="fragment"><code>requirements.txt</code> lists project dependencies.</li>
+<li class="fragment">This directory structure helps organize and manage the book’s content effectively.</li>
+</ul>
+</section>
+<section id="the-structure-will-be-hosted-on-a-shared-github-repository" class="slide level1">
+<h1><strong>The Structure Will be Hosted on a Shared GitHub Repository</strong></h1>
+<ul>
+<li class="fragment">Our Jupyter Book project structure will be hosted on a shared GitHub repository.</li>
+<li class="fragment">This collaborative approach allows team members to access and contribute to the documentation.</li>
+<li class="fragment">GitHub provides version control, making it easy to track changes and collaborate effectively.</li>
+<li class="fragment">This shared repository serves as a central hub for our project’s documentation and resources.</li>
+</ul>
+</section>
+<section id="automatic-regeneration-after-approved-changes" class="slide level1">
+<h1><strong>Automatic Regeneration After Approved Changes</strong></h1>
+<ul>
+<li class="fragment">We have implemented an automated system for our Jupyter Book project.</li>
+<li class="fragment">After each approved change or update, the book will be automatically regenerated.</li>
+<li class="fragment">This ensures that the documentation is always up-to-date and reflects the latest contributions.</li>
+<li class="fragment">The regeneration process maintains the book’s accuracy and accessibility for all users.</li>
+</ul>
+</section>
+<section id="useful-links" class="slide level1">
+<h1><strong>Useful Links</strong></h1>
+<ul>
+<li class="fragment"><a href="https://jupyterbook.org/">Jupyter Book Documentation</a>: The official documentation for Jupyter Book, where you can find detailed guides and resources.</li>
+<li class="fragment"><a href="https://github.com/s4oceanice/">GitHub Repository</a>: The shared GitHub repository where the Jupyter Book project is hosted. Access and contribute to the documentation here.</li>
+<li class="fragment"><a href="https://colab.research.google.com/">Google Colab</a>: A cloud-based platform for executing Jupyter Notebooks directly in your web browser.</li>
+<li class="fragment"><a href="https://www.markdownguide.org/">Markdown Guide</a>: A comprehensive resource for learning Markdown, a common format for content creation.</li>
+<li class="fragment"><a href="https://jupyter-notebook.readthedocs.io/en/stable/">Jupyter Notebook Documentation</a>: The official documentation for Jupyter Notebook, a powerful tool for interactive computing.</li>
+</ul>
+</section>
+<section id="thank-you-for-your-attention" class="slide level1">
+<h1>Thank you for your attention!</h1>
+</section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js" integrity="sha512-8Nk/zoTKjNixnM15wXjpF26KR4Ln87cc5Yllc5xP54wwbcKnljAAn2JP+tYAS8+4e7s/XK8XTiDH0Ltw2fmoBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha512-QYXU3Cojl94ZRiZRjUZpyg1odj9mKTON9MsTMzGNx/L3JqvMA3BQNraZwsZ83UeisO+QMVfFa83SyuYYJzR9hw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        math: {
+          mathjax: '/usr/share/javascript/mathjax/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/math/math.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
